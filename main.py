@@ -18,17 +18,3 @@ bot.run(BOT_TOKEN)
 
 
 ######################################### COMMANDS ##############################
-
-### Hello
-
-@bot.command(name='hello')
-async def hello(ctx):
-    await ctx.send('Salut!')
-
-### Ping
-
-@bot.command(name='ping')
-async def ping(ctx):
-    delay = ctx.bot.latency * 1000
-    await ctx.reply(f'Ping is {int(delay)} Milliseconds')
-    print(f"Pinged In {ctx.guild} -- {ctx.channel}")
